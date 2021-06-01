@@ -1,0 +1,191 @@
+<html>
+<head>
+	<title>Home page</title>
+		<link href="css/Cssheaderfooter.css" rel="stylesheet">
+
+<Style>
+.container {
+  position: relative;display:inline-block;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.sehun[height:500]
+
+.homebutton {
+    position:absolute;
+    height:5.9%;
+}
+</style>
+<body style="background:url(images/wallpaper.png)">
+</head>
+	<div class="content"></div>
+
+<div class="navbar">
+<a href="homepage.html"><img class="homebutton" src="images/logo.png" height="50"></a>
+
+	<div class="navright">
+	    <a href="Homepage.html">HomePage</a>
+		<a href="Issue.html">Technology Issue</a>
+		<a href="About.html">About Us</a>
+		<a href="Login_page.html">Support.</a>
+	</div>
+	</div>
+	
+</div>
+<!---------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------->
+
+<!-- Slideshow container -->
+
+</style>
+</head>
+<body>
+<br>
+<br>
+
+<!----------------------------------------------------------------------------------------------------->
+<!---sildes--->
+<div class="slideshow-container">
+<center>
+  <div class="mySlides fade">
+    <div class="numbertext">1</div>
+    <img src="images/cyber.jpg" style="width:80%">
+    <div class="text">Cyber Barrier</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2</div>
+    <img src="images/issue.jpg" style="width:80%">
+    <div class="text">Technology Issue</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3</div>
+    <img src="images/support.jpg" style="width:80%">
+    <div class="text">Support and Teamwork</div>
+  </div>
+  </div></center>
+</div>
+<br>
+<div>
+<center>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <center>
+</div>
+<script src="homepage.js"> </script>
+<!---------------------------------------------------------------------------------------------------->
+<br><br>
+<center><div style="height:300px">
+  <div class="container">
+  <img src="images/issues.jpg" alt="Avatar" class="image" style="width:300px;" >
+  <div class="middle">
+    <a href="issue.html"style="color:white"><div class="text">Tech Issues</div></a></div></div>
+	
+  <div class="container">
+ <img src="images/abouts.jpg" alt="Avatar" class="image" style="width:300px" >
+  <div class="middle">
+    <a href="about.html" style="color:white"><div class="text">About</div></a></div></div>
+	
+	<div class="container">
+  <img src="images/supports.jpg" alt="Avatar" class="image" style="width:300px" >
+  <div class="middle">
+    <a href="support.html" style="color:white"><div class="text">Support</div></a></div></div></center></div>
+
+
+
+<br><br><br>
+<footer>
+	<div class="footer">
+		<div class="about">
+			<h4>About Cyber barrier:</h4>
+					llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+					llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+					llllllll
+		</div>
+		<div class="quickl">
+			<div class="test"><h4>Quick Links:</h4></div>
+				<ul>
+					<li><a href="Homepage.html">Homepage</a></li>
+					<li><a href="Issue.html">Cyber attack Issue</a></li>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="support.html">Support</a></li>
+				</ul>
+		</div>
+		<div class="connect">
+			<h4>Connect With Us:</h4>
+				<a href="http://facebook.com">
+					<img src="images/facebook.jpg" width="50" height="50" alt="facebook">
+				</a>
+				<a href="http://instagram.com">
+					<img src="images/instagram.jpg" width="50" height="50" alt="instagram">
+				</a>
+				<a href="http://twitter.com">
+					<img src="images/twitter.jpg" width="50" height="50" alt="twitter">
+				</a>
+				<a href="http://youtube.com">
+					<img src="images/youtube.jpg" width="50" height="50" alt="facebook">
+				</a>
+			
+		</div>
+	</div>
+	
+</footer>
+	<div class="copyright">
+	<hr>
+	<h6 class="copytext">&copy; Copyright 2021 Cyber Barrier(group 1116) comp 501</h6>
+	</div>
+
+<script> var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 8000);
+}
+</script>
+</body>
+
+</html>
